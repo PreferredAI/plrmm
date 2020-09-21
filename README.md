@@ -19,7 +19,7 @@ Keywords: Plackett-Luce Model, Learning to Rank, Probability Model, Expectation 
 
 The detailed description of the algorithms as well as the experiments can be found in the following paper:
 
-Maksim Tkachenko and Hady W. Lauw, Plackett-Luce Regression Mixture Model for Heterogeneous Rankings, CIKM 2016.
+> Maksim Tkachenko and Hady W. Lauw, Plackett-Luce Regression Mixture Model for Heterogeneous Rankings, CIKM 2016.
 
 If you are using this library in your research, please consider to cite the above-mentioned paper.
 
@@ -54,7 +54,7 @@ PLRMM is designed for the use as standalone library that can be manipulated via 
 In case you want to modify or use the model in your code, please refer to the source files. 
 
 ### Training PLRM Model
-```
+```bash
 python plrmm_train.py [-k <K>] <examples> <model>
 ```
 
@@ -66,7 +66,7 @@ The script accepts the number of other optional parameters, such as hyperparamet
 information run the script with `-h` or `--help` option.  
 
 ### Assigning Group to New Ranker
-```
+```bash
 python plrmm_predz.py <model> <examples> <assignment>
 ```
 
@@ -76,7 +76,7 @@ trained model is already provided and it should not be modified.
 `<assignment>` specifies an output file where the assignment have to be stored. 
 
 ### Predicting Rankings
-```
+```bash
 python plrmm_predy.py <model> <examples> <assignment> <prediction>
 ```
 
